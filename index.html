@@ -52,17 +52,30 @@
     </div>
   </div>
 
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
-    <ul>
-      <li><a href="#hero" class="mobile-link">Home</a></li>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#experience" class="mobile-link">Experience</a></li>
-      <li><a href="#expertise" class="mobile-link">Expertise</a></li>
-      <li><a href="#education" class="mobile-link">Education</a></li>
-      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
-    </ul>
+</header>
+
+<div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mobile-nav-top">
+      <span class="brand-name mobile-brand">Mercy Mildred Awuor</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#expertise" class="mobile-link">Expertise</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="mobile-nav-footer">
       <a href="Mercy_Awuor_CV.pdf" download class="btn btn-primary">Download CV</a>
       <div class="mobile-socials">
@@ -70,8 +83,9 @@
         <a href="https://github.com/awuormercy78" aria-label="GitHub"><i class="bi bi-github"></i></a>
       </div>
     </div>
-  </nav>
-</header>
+  </div>
+</div>
+<div id="mobile-nav-scrim" class="mobile-nav-scrim"></div>
 
 <main id="main">
 
@@ -307,12 +321,20 @@
       </div>
     </div>
 
-    <div class="systems-row reveal">
+    <div class="systems-block reveal">
       <span class="systems-label">Systems &amp; software</span>
-      <ul class="systems-list">
-        <li>Xero</li><li>MYOB</li><li>QuickBooks</li><li>SAP</li><li>Sage ACCPAC</li>
-        <li>Advanced MS Excel</li><li>SQL</li><li>Power BI</li><li>Microsoft Fabric</li><li>ChatGPT</li>
-      </ul>
+      <div class="systems-grid">
+        <div class="system-tile" style="--tile-tint: var(--brass);"><span class="system-icon"><i class="bi bi-currency-dollar"></i></span><span class="system-name">Xero</span></div>
+        <div class="system-tile" style="--tile-tint: var(--teal);"><span class="system-icon"><i class="bi bi-journal-bookmark"></i></span><span class="system-name">MYOB</span></div>
+        <div class="system-tile" style="--tile-tint: var(--ink);"><span class="system-icon"><i class="bi bi-check2-square"></i></span><span class="system-name">QuickBooks</span></div>
+        <div class="system-tile" style="--tile-tint: var(--teal);"><span class="system-icon"><i class="bi bi-building"></i></span><span class="system-name">SAP</span></div>
+        <div class="system-tile" style="--tile-tint: var(--brass);"><span class="system-icon"><i class="bi bi-shield-check"></i></span><span class="system-name">Sage ACCPAC</span></div>
+        <div class="system-tile" style="--tile-tint: var(--ink);"><span class="system-icon"><i class="bi bi-grid-3x3"></i></span><span class="system-name">Advanced Excel</span></div>
+        <div class="system-tile" style="--tile-tint: var(--teal);"><span class="system-icon"><i class="bi bi-database"></i></span><span class="system-name">SQL</span></div>
+        <div class="system-tile" style="--tile-tint: var(--brass);"><span class="system-icon"><i class="bi bi-bar-chart-line"></i></span><span class="system-name">Power BI</span></div>
+        <div class="system-tile" style="--tile-tint: var(--ink);"><span class="system-icon"><i class="bi bi-diagram-3"></i></span><span class="system-name">Microsoft Fabric</span></div>
+        <div class="system-tile" style="--tile-tint: var(--teal);"><span class="system-icon"><i class="bi bi-stars"></i></span><span class="system-name">AI-assisted Analytics</span></div>
+      </div>
     </div>
   </section>
 
