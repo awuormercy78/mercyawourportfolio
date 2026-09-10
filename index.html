@@ -1,959 +1,968 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Awour-portofolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercy Mildred Awuor | Financial Analyst &amp; Accountant</title>
+<meta name="description" content="Mercy Mildred Awuor is a Financial Analyst and Accountant with 14+ years of experience in financial reporting, BAS, bookkeeping, payroll and financial analysis, including 6+ years in Australian accounting.">
+<meta name="keywords" content="Financial Analyst, Accountant, BAS, Bookkeeping, Payroll, Financial Reporting, Xero, MYOB, QuickBooks, Power BI, Sydney, Australia">
 
-  <!-- Favicons -->
-  <link href="assets/img/profile.png" rel="icon">
-  <link href="assets/img/profile.png" rel="apple-touch-icon">
-<!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Open Graph -->
+<meta property="og:title" content="Mercy Mildred Awuor | Financial Analyst &amp; Accountant">
+<meta property="og:description" content="Financial Analyst &amp; Accountant specialising in BAS, bookkeeping, payroll and financial reporting. 14+ years experience, 6+ years in Australian accounting.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/profile.png">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/profile.png">
+<link rel="apple-touch-icon" href="assets/img/profile.png">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<style>
+  :root{
+    --navy:#0E1E33;
+    --navy-2:#16283F;
+    --paper:#FAF9F6;
+    --paper-2:#F2F0EA;
+    --ink:#1C2430;
+    --slate:#5B6674;
+    --slate-light:#88919C;
+    --brass:#A9812F;
+    --brass-light:#C9A24E;
+    --line:#E4E1D8;
+    --line-dark:rgba(255,255,255,0.14);
+    --radius:2px;
+    --max:1120px;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:600;
+    color:var(--navy);
+    margin:0 0 0.5em;
+    letter-spacing:-0.01em;
+  }
+
+  p{margin:0 0 1em; color:var(--slate); max-width:62ch;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  .visually-hidden{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+  }
+
+  /* ---------- Nav ---------- */
+  header.site-header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(14,30,51,0.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    max-width:var(--max); margin:0 auto; padding:16px 28px;
+  }
+  .brand{
+    font-family:var(--serif); color:#fff; font-size:1.15rem; font-weight:600;
+    display:flex; align-items:center; gap:10px;
+  }
+  .brand .mark{
+    width:34px; height:34px; border-radius:50%;
+    border:1px solid var(--brass-light);
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.75rem; letter-spacing:0.04em; color:var(--brass-light);
+  }
+  nav.navmenu ul{
+    list-style:none; display:flex; gap:28px; margin:0; padding:0;
+  }
+  nav.navmenu a{
+    color:#D7DCE3; font-size:0.92rem; font-weight:500;
+    padding:6px 2px; border-bottom:1px solid transparent;
+    transition:color 0.2s ease, border-color 0.2s ease;
+  }
+  nav.navmenu a:hover, nav.navmenu a.active{
+    color:#fff; border-color:var(--brass-light);
+  }
+  .nav-toggle{
+    display:none; background:none; border:1px solid var(--line-dark);
+    color:#fff; padding:8px 10px; border-radius:var(--radius); cursor:pointer;
+  }
+
+  @media (max-width:860px){
+    nav.navmenu{
+      position:fixed; top:64px; right:0; bottom:0; width:min(78vw,320px);
+      background:var(--navy); transform:translateX(100%);
+      transition:transform 0.3s ease; padding:24px; overflow-y:auto;
+      border-left:1px solid var(--line-dark);
+    }
+    nav.navmenu.open{transform:translateX(0);}
+    nav.navmenu ul{flex-direction:column; gap:4px;}
+    nav.navmenu a{display:block; padding:12px 4px; border-bottom:1px solid var(--line-dark);}
+    .nav-toggle{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(155deg, var(--navy) 0%, var(--navy-2) 100%);
+    color:#fff;
+    padding:168px 0 96px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:repeating-linear-gradient(180deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 48px);
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.4fr 0.9fr; gap:64px; align-items:center;
+    position:relative; z-index:1;
+  }
+  .hero-eyebrow{
+    color:var(--brass-light); font-size:0.85rem; font-weight:600;
+    margin-bottom:18px; letter-spacing:0.02em;
+  }
+  .hero h1{
+    color:#fff; font-size:clamp(2.4rem, 4.6vw, 3.6rem); line-height:1.06;
+    margin-bottom:10px;
+  }
+  .hero .role{
+    font-family:var(--serif); font-size:clamp(1.2rem,2vw,1.5rem);
+    color:#EDEBE3; font-weight:500; margin-bottom:18px;
+  }
+  .hero .specialisation{
+    color:var(--slate-light); font-size:1rem; margin-bottom:28px;
+  }
+  .hero p.statement{
+    color:#C7CDD6; max-width:56ch; font-size:1.02rem;
+  }
+  .cta-row{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 26px; font-size:0.95rem; font-weight:600;
+    border-radius:var(--radius); border:1px solid transparent;
+    cursor:pointer; transition:background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .btn-primary{background:var(--brass); color:var(--navy);}
+  .btn-primary:hover{background:var(--brass-light);}
+  .btn-outline{border-color:rgba(255,255,255,0.35); color:#fff;}
+  .btn-outline:hover{border-color:#fff; background:rgba(255,255,255,0.06);}
+
+  .hero-photo{
+    position:relative; justify-self:center;
+  }
+  .hero-photo .frame{
+    width:min(280px,80%); aspect-ratio:1/1.08; overflow:hidden;
+    border:1px solid var(--line-dark); border-radius:var(--radius);
+  }
+  .hero-photo img{width:100%; height:100%; object-fit:cover;}
+  .hero-photo .tag{
+    position:absolute; bottom:-18px; left:50%; transform:translateX(-50%);
+    background:var(--paper); color:var(--navy); font-size:0.78rem; font-weight:600;
+    padding:10px 18px; border-radius:var(--radius); white-space:nowrap;
+    box-shadow:0 12px 28px rgba(0,0,0,0.25);
+  }
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr; gap:40px;}
+    .hero-photo{order:-1;}
+    .hero-photo .frame{width:180px; margin:0 auto;}
+  }
+
+  /* ---------- Section shell ---------- */
+  section{padding:88px 0;}
+  .section-head{margin-bottom:44px; max-width:70ch;}
+  .section-head .kicker{
+    color:var(--brass); font-weight:600; font-size:0.85rem; margin-bottom:10px;
+  }
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.2rem);}
+  .section-alt{background:var(--paper-2);}
+  .rule{border:none; border-top:1px solid var(--line); margin:0;}
+
+  /* ---------- Stats strip ---------- */
+  .stats{
+    background:var(--navy); color:#fff; padding:0;
+  }
+  .stats-grid{
+    display:grid; grid-template-columns:repeat(4,1fr);
+  }
+  .stat{
+    padding:40px 28px; border-left:1px solid var(--line-dark);
+  }
+  .stat:first-child{border-left:none;}
+  .stat .num{font-family:var(--serif); font-size:2.1rem; color:var(--brass-light); font-weight:600;}
+  .stat .label{font-size:0.88rem; color:#B7BEC8; margin-top:4px;}
+  @media (max-width:760px){
+    .stats-grid{grid-template-columns:1fr 1fr;}
+    .stat{border-left:none; border-top:1px solid var(--line-dark);}
+    .stat:nth-child(1),.stat:nth-child(2){border-top:none;}
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start;
+  }
+  .about-card{
+    border:1px solid var(--line); background:#fff; padding:26px;
+  }
+  .about-card dl{margin:0;}
+  .about-card dt{font-size:0.78rem; color:var(--slate-light); font-weight:600; margin-top:16px;}
+  .about-card dt:first-child{margin-top:0;}
+  .about-card dd{margin:2px 0 0; color:var(--ink); font-weight:500;}
+  .about-card a{color:var(--navy); border-bottom:1px solid var(--line);}
+  .about-card a:hover{border-color:var(--brass);}
+
+  .about-copy p{max-width:64ch;}
+  .about-copy ul{
+    list-style:none; padding:0; margin:20px 0 0;
+    display:grid; grid-template-columns:1fr 1fr; gap:8px 20px;
+  }
+  .about-copy li{
+    color:var(--slate); font-size:0.95rem; padding-left:16px; position:relative;
+  }
+  .about-copy li::before{
+    content:""; position:absolute; left:0; top:0.65em; width:6px; height:1px; background:var(--brass);
+  }
+  @media (max-width:860px){
+    .about-grid{grid-template-columns:1fr;}
+    .about-copy ul{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Expertise ---------- */
+  .expertise-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  .expertise-card{background:#fff; padding:28px 24px;}
+  .expertise-card h3{font-size:1.05rem; margin-bottom:14px;}
+  .expertise-card ul{list-style:none; margin:0; padding:0;}
+  .expertise-card li{
+    font-size:0.9rem; color:var(--slate); padding:6px 0;
+    border-top:1px solid var(--line);
+  }
+  .expertise-card li:first-child{border-top:none;}
+  @media (max-width:900px){
+    .expertise-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:560px){
+    .expertise-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Tools ---------- */
+  .tools-row{
+    display:flex; flex-wrap:wrap; gap:12px;
+  }
+  .tool-pill{
+    border:1px solid var(--line); background:#fff;
+    padding:10px 18px; font-size:0.9rem; font-weight:500; color:var(--ink);
+  }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{position:relative; max-width:800px;}
+  .timeline::before{
+    content:""; position:absolute; left:0; top:6px; bottom:6px; width:1px; background:var(--line);
+  }
+  .tl-item{position:relative; padding-left:32px; padding-bottom:44px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:""; position:absolute; left:-4px; top:6px; width:9px; height:9px;
+    border-radius:50%; background:var(--brass); border:2px solid var(--paper);
+  }
+  .tl-item .role-row{
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap;
+  }
+  .tl-item h3{font-size:1.15rem; margin-bottom:2px;}
+  .tl-item .period{font-size:0.85rem; color:var(--brass); font-weight:600; white-space:nowrap;}
+  .tl-item .org{color:var(--slate); font-style:normal; font-size:0.92rem; margin-bottom:10px; display:block;}
+  .tl-item ul{margin:0; padding-left:18px; color:var(--slate);}
+  .tl-item li{margin-bottom:6px; font-size:0.94rem;}
+
+  .other-exp{
+    border-left:2px solid var(--brass); padding-left:22px; margin-top:12px;
+  }
+
+  /* ---------- Education / certs ---------- */
+  .ed-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:20px;
+  }
+  .ed-card{
+    border:1px solid var(--line); background:#fff; padding:24px;
+  }
+  .ed-card .yr{color:var(--brass); font-weight:600; font-size:0.85rem;}
+  .ed-card h3{font-size:1.05rem; margin:6px 0 4px;}
+  .ed-card .place{color:var(--slate-light); font-size:0.85rem; margin-bottom:8px; display:block;}
+  @media (max-width:700px){.ed-grid{grid-template-columns:1fr;}}
+
+  .cert-list{list-style:none; margin:32px 0 0; padding:0; display:grid; gap:14px;}
+  .cert-list li{
+    border-top:1px solid var(--line); padding-top:14px;
+    display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  }
+  .cert-list .name{font-weight:600; color:var(--navy);}
+  .cert-list .meta{color:var(--slate-light); font-size:0.85rem;}
+  .cert-list .cert-link{
+    display:inline-block; margin-top:6px; font-size:0.85rem; color:var(--brass); font-weight:600;
+    border-bottom:1px solid var(--brass);
+  }
+
+  /* ---------- Projects ---------- */
+  .proj-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:24px;
+  }
+  .proj-card{
+    border:1px solid var(--line); background:#fff; display:flex; flex-direction:column;
+  }
+  .proj-card img{width:100%; aspect-ratio:16/9; object-fit:cover;}
+  .proj-body{padding:22px; display:flex; flex-direction:column; gap:10px; flex:1;}
+  .proj-cat{color:var(--brass); font-size:0.78rem; font-weight:600;}
+  .proj-body h3{font-size:1.05rem; margin:0;}
+  .proj-body p{font-size:0.92rem; margin:0; flex:1;}
+  .proj-link{
+    align-self:flex-start; font-size:0.88rem; font-weight:600; color:var(--navy);
+    border-bottom:1px solid var(--line); margin-top:6px;
+  }
+  .proj-link:hover{border-color:var(--brass); color:var(--brass);}
+  @media (max-width:760px){.proj-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Services ---------- */
+  .svc-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  .svc-card{background:#fff; padding:30px 26px;}
+  .svc-card h3{font-size:1.05rem; margin-bottom:8px;}
+  .svc-card p{font-size:0.92rem; margin:0;}
+  @media (max-width:900px){.svc-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.svc-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px;
+  }
+  .contact-info dl{margin:0;}
+  .contact-info dt{font-size:0.78rem; color:var(--slate-light); font-weight:600; margin-top:20px;}
+  .contact-info dt:first-child{margin-top:0;}
+  .contact-info dd{margin:2px 0 0; font-size:1.05rem; color:var(--navy); font-weight:600;}
+  .contact-info dd a:hover{color:var(--brass);}
+  .social-row{display:flex; gap:16px; margin-top:26px;}
+  .social-row a{
+    width:38px; height:38px; border:1px solid var(--line); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; font-size:0.85rem;
+    color:var(--navy); font-weight:600;
+  }
+  .social-row a:hover{border-color:var(--brass); color:var(--brass);}
+
+  form#contact-form{display:grid; gap:16px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  form#contact-form label{
+    font-size:0.82rem; font-weight:600; color:var(--slate); display:block; margin-bottom:6px;
+  }
+  form#contact-form input, form#contact-form textarea{
+    width:100%; border:1px solid var(--line); background:#fff; padding:12px 14px;
+    font-family:var(--sans); font-size:0.95rem; color:var(--ink); border-radius:var(--radius);
+  }
+  form#contact-form textarea{min-height:130px; resize:vertical;}
+  .form-status{font-size:0.88rem; min-height:1.2em;}
+  .form-status.success{color:#2E7D5B;}
+  .form-status.error{color:#B3432B;}
+  @media (max-width:700px){.contact-grid{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;}}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--navy); color:#B7BEC8; padding:28px 0; font-size:0.85rem;
+  }
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
+  footer a:hover{color:#fff;}
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{opacity:0; transform:translateY(14px); transition:opacity 0.6s ease, transform 0.6s ease;}
+  .reveal.in{opacity:1; transform:none;}
+
+  /* ---------- Skip link ---------- */
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--brass); color:var(--navy);
+    padding:10px 16px; z-index:1000; font-weight:600;
+  }
+  .skip-link:focus{left:12px; top:12px;}
+</style>
 </head>
 
-<body class="index-page">
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/profile.png" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/profile.png" alt="page"> -->
-      <h1 class="sitename">Mercy Awuor</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/mercy-mildred-awuor-051a7b24" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/awuormercy78" class="facebook"><i class="bi bi-github"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="#hero" class="brand"><span class="mark">MA</span> Mercy Mildred Awuor</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navmenu">Menu</button>
+    <nav class="navmenu" id="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-  </header>
-
-  <main class="main">
-
-   <!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
-  <img src="assets/img/home.jpg" alt="" data-aos="fade-in" class="">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <h2>Mercy Awuor</h2>
-    <p>I <span class="typed" data-typed-items=" am a Certified Public Accountant (CPA),have a Bachelors degree - Business Management - Accounts and Finance, have a Certificate IV in Training and Assessment, am a Problem Solver, am an MBA - Finance">Business Analyst</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
   </div>
-</section><!-- /Hero Section -->
+</header>
 
-<style>
-  /* Background with elegant dark gradient */
-.about {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: #fff;
-  padding: 80px 0;
-}
+<main id="main">
 
-/* Section title styling */
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffcc00;
-  position: relative;
-  display: inline-block;
-}
-
-/* About card with glassmorphism effect */
-.about-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
-
-.about-card:hover {
-  transform: translateY(-10px);
-}
-
-/* Image styling with hover effect */
-.about-image img {
-  width: 250px;
-  border-radius: 50%;
-  border: 5px solid #ffcc00;
-  transition: transform 0.4s ease-in-out;
-}
-
-.about-image img:hover {
-  transform: scale(1.1);
-}
-
-/* Content Styling */
-.about-content h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #ffcc00;
-}
-
-.about-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.about-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-content ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.about-content ul li i {
-  color: #ffcc00;
-  margin-right: 8px;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .about-card {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-</style>
-<!-- About Section -->
-<!-- About Section -->
-<section id="about" class="about section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-      I am a detail-oriented Analyst with a strong background in finance, analytics, and stakeholder engagement. 
-      With over a decade of experience spanning government, education, and nonprofit sectors, I specialize in turning data into actionable insights to support organizational decision-making.
-    </p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="about-card">
-      <div class="about-image" data-aos="zoom-in">
-        <img src="assets/img/profile.png" class="img-fluid" alt="Mercy Awuor">
-      </div>
-      <div class="about-content" data-aos="fade-left">
-        <h2>Finance Professional & Analyst</h2>
-        <p class="fst-italic">
-          Skilled in stakeholder management, business process improvement, financial analysis, and data-driven decision making. Passionate about optimizing systems and supporting diverse communities.
-        </p>
-        <div class="row">
-          <div class="col-lg-6">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Sydney, Australia</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>0416 108 916</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>awuormercy@gmail.com</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Gender:</strong> <span>Female</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>10+ Years</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MBA in Finance</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Current Study:</strong> <span>Master of Analytics</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Driver’s License:</strong> <span>Full</span></li>
-            </ul>
-          </div>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-eyebrow">Financial Analyst &amp; Accountant</p>
+        <h1>Mercy Mildred Awuor</h1>
+        <p class="role">BAS · Bookkeeping · Payroll · Financial Reporting · Financial Analytics</p>
+        <p class="statement">14+ years of accounting and finance experience, including 6+ years in Australian accounting — spanning financial reporting, BAS and ATO compliance, bookkeeping, payroll and financial analysis for organisations across health services and analytics consulting.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="Mercy_Awuor_CV.pdf" target="_blank" rel="noopener">View resume</a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
         </div>
-        <p>
-          I am committed to continuous learning and value collaborative problem solving. 
-          I bring a unique blend of analytical, financial, and community service experience to every project I work on.
-        </p>
+      </div>
+      <div class="hero-photo">
+        <div class="frame">
+          <img src="assets/img/profile.png" alt="Portrait of Mercy Mildred Awuor">
+        </div>
+        <span class="tag">Chain Valley Bay, NSW</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<style>
-  /* Stats Section - Dark Gradient Background */
-.stats {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-}
-
-/* Stats Item - Glassmorphism Effect */
-.stats-item {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-}
-
-.stats-item:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Icon Styling */
-.stats-item i {
-  font-size: 3rem;
-  color: #ffcc00;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.stats-item:hover i {
-  transform: scale(1.2);
-}
-
-/* Counter Number */
-.stats-item span {
-  font-size: 2rem;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Stats Description */
-.stats-item p {
-  font-size: 1rem;
-  margin: 0;
-}
-
-.stats-item strong {
-  font-size: 1.2rem;
-  display: block;
-  color: #ffcc00;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .stats-item {
-    padding: 20px;
-  }
-}
-
-</style>
-   <!-- Stats Section -->
-<!-- Stats Section -->
-<section id="stats" class="stats section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item" data-aos="zoom-in">
-          <i class="bi bi-bar-chart-line"></i>
-          <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Years of Experience</strong></p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
-          <i class="bi bi-briefcase"></i>
-          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Projects Delivered</strong></p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item" data-aos="zoom-in" data-aos-delay="400">
-          <i class="bi bi-person-lines-fill"></i>
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Stakeholders Engaged</strong></p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item" data-aos="zoom-in" data-aos-delay="600">
-          <i class="bi bi-bar-chart"></i>
-          <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-          <p><strong>Analytics Tools Used</strong></p>
-        </div>
-      </div><!-- End Stats Item -->
-
+  <!-- STATS -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><div class="num">14+</div><div class="label">Years of experience</div></div>
+      <div class="stat"><div class="num">6+</div><div class="label">Years Australian accounting &amp; finance</div></div>
+      <div class="stat"><div class="num">6</div><div class="label">Core accounting &amp; analytics platforms</div></div>
+      <div class="stat"><div class="num">2026</div><div class="label">Master of Analytics</div></div>
     </div>
   </div>
-</section>
 
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <div class="wrap about-grid">
+      <div class="about-card">
+        <dl>
+          <dt>Location</dt><dd>Chain Valley Bay, NSW, Australia</dd>
+          <dt>Phone</dt><dd><a href="tel:+61416108916">0416 108 916</a></dd>
+          <dt>Email</dt><dd><a href="mailto:awuormercy@gmail.com">awuormercy@gmail.com</a></dd>
+          <dt>Current role</dt><dd>Financial Analyst, 10Alytics</dd>
+          <dt>Credential</dt><dd>CPA (2001), CFAP (2025)</dd>
+        </dl>
+      </div>
+      <div class="about-copy">
+        <div class="section-head" style="margin-bottom:20px;">
+          <p class="kicker">About</p>
+          <h2>Accounting discipline, analytics fluency</h2>
+        </div>
+        <p>Mercy is an experienced Accountant and Financial Analyst with a career built across financial reporting, bookkeeping, payroll, auditing and financial analysis. Her Australian accounting experience covers BAS preparation, general ledger and bank reconciliation, bookkeeping in Xero and QuickBooks, financial statement and working-paper preparation, payroll processing, month-end and year-end reporting, and ATO compliance.</p>
+        <p>She recently completed a Master of Analytics alongside the Certified Financial Analytics Professional (CFAP) credential, and works fluently across SQL, Power BI and advanced Excel to turn financial data into decisions — backed by close attention to detail, confidentiality, stakeholder communication and problem-solving.</p>
+        <ul>
+          <li>Financial reporting &amp; auditing</li>
+          <li>BAS preparation &amp; GST</li>
+          <li>General ledger &amp; reconciliation</li>
+          <li>Bookkeeping &amp; payroll</li>
+          <li>Business valuation</li>
+          <li>Scenario modelling</li>
+          <li>Power BI &amp; SQL reporting</li>
+          <li>Microsoft Fabric</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-
- <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // Animation duration
-    once: true, // Run only once
-  });
-</script>
-
-<!-- PureCounter.js -->
-<script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.1/dist/purecounter_vanilla.js"></script>
-<script>
-  new PureCounter();
-</script>
-<style>
-.qualification-card {
-  transition: transform 0.3s ease;
-}
-.qualification-card:hover {
-  transform: translateY(-5px);
-}
-</style>
-
- <section id="qualifications" class="qualifications section">
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2>Qualifications</h2>
-    <p>A comprehensive background in business analytics, finance, community services, and compliance—supported by industry certifications and practical tool expertise.</p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-
-      <!-- Column 1: Academic Background -->
-      <div class="col-lg-6">
-        <div class="qualification-card p-4 bg-light rounded shadow-sm h-100">
-          <h5 class="mb-3">Academic Qualifications</h5>
-          <ul class="mb-0">
-            <li><strong>In Progress</strong> – Master of Analytics (Extension)</li>
-            <li><strong>2012</strong> – MBA, Finance</li>
-            <li><strong>2003</strong> – Bachelor's in Business Management (Accounting & Finance)</li>
-            <li><strong>2001</strong> – Certified Public Accountant (CPA)</li>
+  <!-- EXPERTISE -->
+  <section id="expertise" class="section-alt reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Expertise</p>
+        <h2>Core skills</h2>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <h3>Financial Analysis</h3>
+          <ul>
+            <li>Financial analysis</li>
+            <li>Scenario modelling</li>
+            <li>Business valuation</li>
+            <li>Budgeting &amp; forecasting</li>
+          </ul>
+        </div>
+        <div class="expertise-card">
+          <h3>Accounting &amp; Reporting</h3>
+          <ul>
+            <li>Financial reporting</li>
+            <li>General ledger</li>
+            <li>Bank reconciliation</li>
+            <li>Accounts payable &amp; receivable</li>
+            <li>Payroll</li>
+          </ul>
+        </div>
+        <div class="expertise-card">
+          <h3>Tax &amp; Compliance</h3>
+          <ul>
+            <li>BAS preparation</li>
+            <li>GST</li>
+            <li>ATO compliance</li>
+            <li>Australian taxation</li>
+            <li>Income tax returns</li>
+            <li>Audit support</li>
+          </ul>
+        </div>
+        <div class="expertise-card">
+          <h3>Analytics &amp; BI</h3>
+          <ul>
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Microsoft Fabric</li>
+            <li>Advanced Excel</li>
+            <li>AI-assisted analytics</li>
           </ul>
         </div>
       </div>
 
-      <!-- Column 2: Professional & Compliance Certifications -->
-      <div class="col-lg-6">
-        <div class="qualification-card p-4 bg-light rounded shadow-sm h-100">
-          <h5 class="mb-3">Certifications & Checks</h5>
-          <ul class="mb-0">
-            <li><strong>2023</strong> – Certificate IV in Training and Assessment</li>
-            <li><strong>2022</strong> – CPR Certificate</li>
-            <li><strong>2022</strong> – Working with Children Check</li>
-            <li><strong>2022</strong> – National Criminal History Check</li>
-            <li><strong>2021</strong> – First Aid / CPR Certificate</li>
-            <li><strong>2021</strong> – NDIS Worker Check – Clearance</li>
-            <li><strong>2020</strong> – Diploma of Community Services</li>
-            <li><strong>2020</strong> – Certificate IV in Ageing Support</li>
-            <li><strong>2018</strong> – Certificate IV in Disability</li>
+      <div style="margin-top:48px;">
+        <h3 style="font-size:1.05rem; margin-bottom:16px;">Software &amp; platforms</h3>
+        <div class="tools-row">
+          <span class="tool-pill">Xero</span>
+          <span class="tool-pill">MYOB</span>
+          <span class="tool-pill">QuickBooks</span>
+          <span class="tool-pill">SAP</span>
+          <span class="tool-pill">Sage ACCPAC</span>
+          <span class="tool-pill">Advanced MS Excel</span>
+          <span class="tool-pill">SQL &amp; Power BI</span>
+          <span class="tool-pill">Microsoft Fabric</span>
+          <span class="tool-pill">AI-assisted analytics (ChatGPT)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Experience</p>
+        <h2>Professional experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Financial Analyst</h3>
+            <span class="period">Jan 2025 – Present</span>
+          </div>
+          <span class="org">10Alytics, Australia</span>
+          <ul>
+            <li>Performs financial analysis and modelling to support strategic decision-making, applying scenario modelling and business valuation techniques.</li>
+            <li>Builds and maintains Power BI dashboards and SQL-based reporting to translate financial and operational data into business intelligence.</li>
+            <li>Uses Microsoft Fabric and AI-assisted analytics tools, including ChatGPT, to streamline data preparation, reporting and analysis workflows.</li>
+            <li>Investigates business issues and develops data-driven recommendations for stakeholders.</li>
+            <li>Collaborates with cross-functional teams to deliver financial insights supporting planning and strategic initiatives.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Accountant</h3>
+            <span class="period">2017 – 2023</span>
+          </div>
+          <span class="org">Adorn Health Providers Pty Ltd, Australia</span>
+          <ul>
+            <li>Prepared and reviewed financial statements, working papers and management reports each reporting cycle.</li>
+            <li>Managed the full payroll, accounts payable, accounts receivable and general ledger cycle.</li>
+            <li>Delivered month-end and year-end close processes to tight deadlines, keeping the ledger reconciled and reporting-ready.</li>
+            <li>Prepared and lodged BAS, GST and other regulatory filings, keeping the business compliant with ATO requirements.</li>
+            <li>Used Xero, QuickBooks and MYOB for bookkeeping and financial record-keeping.</li>
+            <li>Investigated variances and discrepancies in financial data, resolving issues at the source.</li>
+            <li>Partnered with management on budgets and financial forecasts, and coordinated audit documentation as the key liaison with external auditors.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Internal Auditor</h3>
+            <span class="period">2011 – 2017</span>
+          </div>
+          <span class="org">Rural Electrification Authority, Kenya</span>
+          <ul>
+            <li>Developed and executed risk-based annual internal audit plans covering financial, operational and compliance areas.</li>
+            <li>Conducted audits of financial statements, procurement processes and internal controls, identifying gaps and recommending corrective actions.</li>
+            <li>Reviewed payroll, procurement and expenditure records to identify irregularities and control weaknesses.</li>
+            <li>Prepared audit reports for management review and tracked implementation through follow-up audits.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Financial Accountant</h3>
+            <span class="period">2009 – 2010</span>
+          </div>
+          <span class="org">I Choose Life — Africa</span>
+          <ul>
+            <li>Managed financial records and prepared donor and program funding reports, supporting transparency across humanitarian program funding.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Program Accountant</h3>
+            <span class="period">2009</span>
+          </div>
+          <span class="org">Horn Relief</span>
+          <ul>
+            <li>Provided financial management support across humanitarian relief projects, helping ensure funds were tracked and accounted for accurately in a fast-paced field environment.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="role-row">
+            <h3>Accountant</h3>
+            <span class="period">2008 – 2009</span>
+          </div>
+          <span class="org">Catholic University of Eastern Africa</span>
+          <ul>
+            <li>Supported financial record-keeping and budgeting processes for the university.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Full Width: Tools & Software -->
-      <div class="col-12">
-        <div class="qualification-card p-4 bg-light rounded shadow-sm">
-          <h5 class="mb-3">Tools & Software Proficiency</h5>
-          <p class="mb-0">
-            Proficient in accounting and enterprise software: <strong>QuickBooks, SAP (Systems Application Product), Microsoft Office, Sage ACCPAC, Great Plains System,</strong> and <strong>Lotus 1-2-3</strong>.
-          </p>
+      <div class="other-exp">
+        <h3 style="font-size:1.05rem;">Other experience</h3>
+        <div class="role-row">
+          <h4 style="font-size:1rem; font-family:var(--sans); font-weight:600; color:var(--navy); margin:8px 0 2px;">Family Partnership Coordinator (Part Time)</h4>
+          <span class="period">2023 – 2026</span>
+        </div>
+        <span class="org">The Smith Family</span>
+        <ul style="margin-top:8px; padding-left:18px; color:var(--slate);">
+          <li style="margin-bottom:6px; font-size:0.94rem;">Designed and delivered family-led engagement models that improved school attendance among participating students.</li>
+          <li style="margin-bottom:6px; font-size:0.94rem;">Partnered with schools to track student performance and manage scholarship records.</li>
+          <li style="margin-bottom:6px; font-size:0.94rem;">Connected families with support services, coordinating referrals to support student outcomes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section-alt reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Education</p>
+        <h2>Education &amp; certifications</h2>
+      </div>
+
+      <div class="ed-grid">
+        <div class="ed-card">
+          <span class="yr">2026</span>
+          <h3>Master of Analytics</h3>
+          <span class="place">Australia</span>
+          <p style="margin:0; font-size:0.92rem;">Data analytics, predictive modelling and business intelligence.</p>
+        </div>
+        <div class="ed-card">
+          <span class="yr">2012</span>
+          <h3>MBA — Finance</h3>
+          <span class="place">Kenya</span>
+          <p style="margin:0; font-size:0.92rem;">Financial management, budgeting, corporate finance and strategic planning.</p>
+        </div>
+        <div class="ed-card">
+          <span class="yr">2003</span>
+          <h3>Bachelor's in Business Management (Accounting &amp; Finance)</h3>
+          <span class="place">Kenya</span>
+          <p style="margin:0; font-size:0.92rem;">Accounting principles, financial analysis and cost control systems.</p>
+        </div>
+        <div class="ed-card">
+          <span class="yr">2001</span>
+          <h3>Certified Public Accountant (CPA)</h3>
+          <span class="place">Kenya</span>
+          <p style="margin:0; font-size:0.92rem;">Auditing, taxation and financial reporting.</p>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-  
-
-    <!-- Skills Section -->
-    <!-- Skills Section -->
-<section id="skills" class="skills section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>I apply analytical thinking, stakeholder collaboration, and data-driven insights to support effective decision-making and improve business outcomes.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row skills-grid">
-
-      <div class="skill-row">
-        <!-- Business Analysis -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="150">
-          <div class="icon"><i class="bi bi-graph-up" style="font-size: 2rem;"></i></div>
-          <h3>Business Analysis</h3>
-          <p>Requirements Gathering, Process Mapping, GAP Analysis</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 92%;"></div>
+      <ul class="cert-list">
+        <li>
+          <div>
+            <div class="name">Certificate IV in Training and Assessment</div>
+            <div class="meta">2023</div>
           </div>
-          <span class="val">92%</span>
+        </li>
+        <li>
+          <div>
+            <div class="name">Certified Financial Analytics Professional (CFAP)</div>
+            <div class="meta">10Alytics · 25 May 2025 · Credential ID CFAP/C25-01/0137</div>
+            <a class="cert-link" href="awour.pdf" target="_blank" rel="noopener">View certificate</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Projects</p>
+        <h2>Analytics &amp; financial modelling work</h2>
+      </div>
+
+      <div class="proj-grid">
+        <div class="proj-card">
+          <img src="assets/img/production.jpg" alt="Excel capstone dashboard">
+          <div class="proj-body">
+            <span class="proj-cat">Data Analytics</span>
+            <h3>Excel Capstone Project</h3>
+            <p>Pivot tables, data cleaning and dashboarding used to analyse and report on business performance.</p>
+            <a class="proj-link" href="https://docs.google.com/spreadsheets/d/1LseuIkMmmW3m908kSkG6g8-RL5Rq1A42/edit?usp=sharing" target="_blank" rel="noopener">View project</a>
+          </div>
         </div>
 
-        <!-- Financial Reporting -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-          <div class="icon"><i class="bi bi-cash-stack" style="font-size: 2rem;"></i></div>
+        <div class="proj-card">
+          <img src="assets/img/cafe.jpg" alt="Bean and Bloom Cafe financial model">
+          <div class="proj-body">
+            <span class="proj-cat">Financial Modelling</span>
+            <h3>Bean and Bloom Café</h3>
+            <p>A financial model covering cost projections, profit and loss, and break-even analysis for a café startup.</p>
+            <a class="proj-link" href="https://docs.google.com/spreadsheets/d/1bTTESaDxrhYieNDeaLLhbIxmiryeMCho/edit?usp=sharing" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <img src="assets/img/sql.jpg" alt="SQL reporting project">
+          <div class="proj-body">
+            <span class="proj-cat">SQL &amp; Reporting</span>
+            <h3>SQL Capstone Project</h3>
+            <p>Data extraction, joins and aggregation built for business-intelligence reporting on operational KPIs.</p>
+            <a class="proj-link" href="https://drive.google.com/file/d/1-lJQUAJ1FjzaSj0jBF8guE0G2EHONfst/view?usp=sharing" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <img src="assets/img/tech.jpg" alt="Power BI dashboard project">
+          <div class="proj-body">
+            <span class="proj-cat">Business Intelligence</span>
+            <h3>Power BI Capstone Project</h3>
+            <p>An interactive Power BI dashboard with real-time visuals, KPIs and slicers for data storytelling.</p>
+            <a class="proj-link" href="https://drive.google.com/file/d/1e_JoIRgKNFXo_W7NtrNSt0bl6xG9G5gv/view?usp=sharing" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-alt reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Services</p>
+        <h2>How I can help</h2>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <h3>Financial Analysis</h3>
+          <p>Financial analysis, scenario modelling, business valuation and decision-support analysis.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Accounting &amp; Bookkeeping</h3>
+          <p>Bookkeeping, reconciliations, general ledger management, and accounts payable/receivable.</p>
+        </div>
+        <div class="svc-card">
+          <h3>BAS &amp; Compliance</h3>
+          <p>BAS preparation, GST support and ATO compliance-related accounting support.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Payroll</h3>
+          <p>Payroll processing and payroll-related financial administration.</p>
+        </div>
+        <div class="svc-card">
           <h3>Financial Reporting</h3>
-          <p>Budgeting, Auditing, Financial Statements, QuickBooks, SAP</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 90%;"></div>
-          </div>
-          <span class="val">90%</span>
+          <p>Financial statements, management reporting, and month-end and year-end reporting.</p>
         </div>
-      </div>
-
-      <div class="skill-row">
-        <!-- Data Analysis -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="250">
-          <div class="icon"><i class="bi bi-bar-chart-line" style="font-size: 2rem;"></i></div>
-          <h3>Data Analysis</h3>
-          <p>Excel, Power BI, Google Sheets, SQL</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 88%;"></div>
-          </div>
-          <span class="val">88%</span>
+        <div class="svc-card">
+          <h3>Data Analytics &amp; BI</h3>
+          <p>SQL, Power BI, Microsoft Fabric and Excel analytics for data-driven reporting.</p>
         </div>
-
-        <!-- Stakeholder Management -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-people-fill" style="font-size: 2rem;"></i></div>
-          <h3>Stakeholder Management</h3>
-          <p>Client Relations, Cross-functional Communication, Negotiation</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 85%;"></div>
-          </div>
-          <span class="val">85%</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <!-- Project Coordination -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="350">
-          <div class="icon"><i class="bi bi-kanban" style="font-size: 2rem;"></i></div>
-          <h3>Project Coordination</h3>
-          <p>Case Management, Milestone Tracking, Collaboration Tools</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 87%;"></div>
-          </div>
-          <span class="val">87%</span>
-        </div>
-
-        <!-- Compliance & Reporting -->
-        <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-          <div class="icon"><i class="bi bi-journal-check" style="font-size: 2rem;"></i></div>
-          <h3>Compliance & Reporting</h3>
-          <p>NDIS, WHS, Community Services Regulations</p>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width: 84%;"></div>
-          </div>
-          <span class="val">84%</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-    <style>
-      .skill-logo {
-        width: 60px; /* Resize logos */
-        height: auto;
-        margin-bottom: 10px;
-      }
-      .skills-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .skill-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-      }
-      .skill-card {
-        flex: 1;
-        text-align: center;
-      }
-    </style>
-    
-<!-- End Skills Section -->
-
-<!-- Resume Section -->
-<section id="resume" class="resume section" style="background-color: #121212; color: #f8f9fa; padding: 60px 0;">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up" style="text-align: center;">
-    <h2 style="color: #ffffff;">Resume</h2>
-    <p style="color: #d1d1d1;">
-      A detail-driven Business Analyst with experience in finance, analytics, community services, and stakeholder engagement.
-      Proven ability to transform data into strategic decisions and improve operational efficiency in both private and public sectors.
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="row">
-
-      <!-- Summary & Education -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title" style="color: #ffffff;">Summary</h3>
-        <div class="resume-item pb-0" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Mercy Awuor</h4>
-          <p style="color: #d1d1d1;">
-            <em>Experienced Analyst and Financial Professional with over 12 years in finance, disability services, youth programs, and internal auditing. 
-            Strong background in stakeholder engagement, process improvement, and compliance reporting.</em>
-          </p>
-          <ul style="color: #d1d1d1;">
-            <li>Sydney, Australia</li>
-            <li>0416 108 916</li>
-            <li>awuormercy@gmail.com</li>
-          </ul>
-        </div>
-
-        <h3 class="resume-title" style="color: #ffffff;">Education</h3>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Master of Analytics (Extension)</h4>
-          <h5 style="color: #d1d1d1;">In Progress</h5>
-          <p style="color: #d1d1d1;"><em>Australia</em></p>
-          <p style="color: #d1d1d1;">Focusing on data analytics, predictive modeling, and business intelligence to support data-driven decisions.</p>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">MBA – Finance</h4>
-          <h5 style="color: #d1d1d1;">2012</h5>
-          <p style="color: #d1d1d1;"><em>Kenya</em></p>
-          <p style="color: #d1d1d1;">Specialized in financial management, budgeting, corporate finance, and strategic planning.</p>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Bachelor's in Business Management (Accounting & Finance)</h4>
-          <h5 style="color: #d1d1d1;">2003</h5>
-          <p style="color: #d1d1d1;"><em>Kenya</em></p>
-          <p style="color: #d1d1d1;">Developed expertise in accounting principles, financial analysis, and cost control systems.</p>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Certified Public Accountant (CPA)</h4>
-          <h5 style="color: #d1d1d1;">2001</h5>
-          <p style="color: #d1d1d1;"><em>Kenya</em></p>
-          <p style="color: #d1d1d1;">Certified in professional accounting practices including auditing, taxation, and financial reporting.</p>
-        </div>
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-  <h4 style="color: #ffffff;">10Alytics Data & Strategy</h4>
-  <h5 style="color: #d1d1d1;">2025</h5>
-  <p style="color: #d1d1d1;"><em>Certified Financial Analytics Professional (CFAP)</em></p>
-  <p style="color: #d1d1d1;">Problem Solving Techniques | Excel for Analytics | Power BI for Business Intelligence | SQL for Analytics | Microsoft Fabric | ChatGPT
-for Analytics | Financial Modelling | Financial Analysis | Business Valuation | Scenario Modelling.</p>
-  <a href="awour.pdf" target="_blank" style="display: inline-block; margin-top: 10px; background-color: #007bff; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: bold;">
-    View Certificate
-  </a>
-</div>
-
-      </div>
-
-      <!-- Professional Experience -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="resume-title" style="color: #ffffff;">Professional Experience</h3>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Family Partnership Coordinator</h4>
-          <h5 style="color: #d1d1d1;">2023 – Present</h5>
-          <p style="color: #d1d1d1;"><em>The Smith Family, Australia</em></p>
-          <ul style="color: #d1d1d1;">
-            <li>Enhanced school attendance through a family-led engagement model.</li>
-            <li>Liaised with schools and tracked student performance and transitions.</li>
-            <li>Managed scholarship records and referred families to support services.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Youth & Disability Support Worker</h4>
-          <h5 style="color: #d1d1d1;">2020 – Present</h5>
-          <p style="color: #d1d1d1;"><em>Wesley Mission, Marist 180</em></p>
-          <ul style="color: #d1d1d1;">
-            <li>Provided trauma-informed care and mentoring to vulnerable young people.</li>
-            <li>Collaborated with stakeholders to implement and monitor case plans.</li>
-            <li>Ensured safety, independence, and community inclusion of clients.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Internal Auditor</h4>
-          <h5 style="color: #d1d1d1;">2011 – 2017</h5>
-          <p style="color: #d1d1d1;"><em>Rural Electrification Authority, Kenya</em></p>
-          <ul style="color: #d1d1d1;">
-            <li>Conducted financial audits and reviewed internal controls across departments.</li>
-            <li>Prepared compliance and regulatory reports to improve accountability.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item" style="background: #1e1e1e; padding: 20px; border-radius: 10px;">
-          <h4 style="color: #ffffff;">Financial Accountant</h4>
-          <h5 style="color: #d1d1d1;">2009 – 2010</h5>
-          <p style="color: #d1d1d1;"><em>I Choose Life – Africa</em></p>
-          <ul style="color: #d1d1d1;">
-            <li>Prepared and maintained financial records and reports for program funding.</li>
-            <li>Supported budgeting, cash flow projections, and grant compliance tracking.</li>
-            <li>Liaised with auditors and donor organizations to ensure financial transparency.</li>
-          </ul>
-        </div>
-
-        <style>
-          .download-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: white;
-            padding: 15px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-          }
-          .download-btn:hover {
-            background-color: #0056b3;
-          }
-        </style>
-
-        <a href="mercy.docx" download class="download-btn">
-          <i class="fas fa-download"></i> Download Resume
-        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-   <style>
-.card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
-.card-body {
-  padding: 20px;
-}
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-}
-</style>
-
-
-   <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2>Projects</h2>
-    <p>Explore a selection of my projects, including financial modeling, data visualization, and SQL reporting — all designed to provide actionable insights and professional documentation.</p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-      <!-- Excel Capstone Project -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/production.jpg" class="card-img-top" alt="Excel Capstone Project">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Excel Capstone Project</h5>
-            <p class="card-text">
-              Advanced Excel project using pivot tables, data cleaning, and dashboards to analyze business performance.
-            </p>
-            <a href="https://docs.google.com/spreadsheets/d/1LseuIkMmmW3m908kSkG6g8-RL5Rq1A42/edit?usp=sharing" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-          </div>
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <div class="section-head" style="margin-bottom:24px;">
+          <p class="kicker">Contact</p>
+          <h2>Let's talk</h2>
+        </div>
+        <dl>
+          <dt>Location</dt><dd>Chain Valley Bay, NSW, Australia</dd>
+          <dt>Phone</dt><dd><a href="tel:+61416108916">0416 108 916</a></dd>
+          <dt>Email</dt><dd><a href="mailto:awuormercy@gmail.com">awuormercy@gmail.com</a></dd>
+        </dl>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/mercy-mildred-awuor-051a7b24" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/awuormercy78" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
         </div>
       </div>
 
-      <!-- Bean and Bloom Café -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/cafe.jpg" class="card-img-top" alt="Bean and Bloom Cafe">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bean and Bloom Café</h5>
-            <p class="card-text">
-              A financial model including cost projections, P&L, and break-even analysis for a café startup using Excel.
-            </p>
-            <a href="https://docs.google.com/spreadsheets/d/1bTTESaDxrhYieNDeaLLhbIxmiryeMCho/edit?usp=sharing" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- SQL Capstone -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/sql.jpg" class="card-img-top" alt="SQL Project">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">SQL Capstone Project</h5>
-            <p class="card-text">
-              SQL-based project that performs data extraction, joins, and aggregation for BI reporting on business KPIs.
-            </p>
-            <a href="https://drive.google.com/file/d/1-lJQUAJ1FjzaSj0jBF8guE0G2EHONfst/view?usp=sharing" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Power BI Capstone -->
-      <div class="col-lg-6 col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/tech.jpg" class="card-img-top" alt="Power BI Capstone">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Power BI Capstone Project</h5>
-            <p class="card-text">
-              An interactive Power BI dashboard built with real-time visuals, KPIs, and slicers for data storytelling.
-            </p>
-            <a href="https://drive.google.com/file/d/1e_JoIRgKNFXo_W7NtrNSt0bl6xG9G5gv/view?usp=sharing" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-   <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // Animation duration
-    once: true, // Run only once
-  });
-</script>
-
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
-<script>
-  // Initialize Isotope for filtering
-  var iso = new Isotope('.isotope-container', {
-    itemSelector: '.portfolio-item',
-    layoutMode: 'masonry',
-    getSortData: {
-      name: '.portfolio-info h4',
-    }
-  });
-
-  // Initialize GLightbox for image preview
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-  });
-</script>
-<style>
-.service-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 30px 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  transition: 0.3s ease-in-out;
-  height: 100%;
-}
-.service-card:hover {
-  transform: translateY(-6px);
-}
-.icon {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-</style>
-
-
- <section id="services" class="services section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Offering strategic business analysis, financial modelling, and data visualization services tailored to support informed decision-making and operational efficiency.</p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Business Analysis -->
-      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-card">
-          <div class="icon"><i class="bi bi-graph-up"></i></div>
-          <h4 class="title">Business Analysis</h4>
-          <p class="description">
-            Identifying business needs, gathering and documenting requirements, and optimizing processes through stakeholder collaboration and GAP analysis.
-          </p>
-        </div>
-      </div>
-
-      <!-- Financial Analysis -->
-      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-card">
-          <div class="icon"><i class="bi bi-cash-stack"></i></div>
-          <h4 class="title">Financial Analysis</h4>
-          <p class="description">
-            Offering expertise in budgeting, forecasting, auditing, and creating financial statements to support strategic financial planning and compliance.
-          </p>
-        </div>
-      </div>
-
-      <!-- Data Analytics -->
-      <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-card">
-          <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
-          <h4 class="title">Data Analytics</h4>
-          <p class="description">
-            Transforming raw data into actionable insights using Excel, SQL, and Power BI to drive performance measurement and evidence-based decision-making.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- End Services Section -->
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>Reach out to discuss how I can support your business goals through data-driven insights and financial expertise.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4 justify-content-center">
-
-      <div class="col-lg-5">
-        <div class="info-wrap bg-light p-4 rounded shadow-sm">
-
-          <!-- Phone -->
-          <div class="info-item d-flex align-items-center mb-4">
-            <i class="bi bi-telephone-fill fs-3 text-primary me-3"></i>
+      <div>
+        <form id="contact-form">
+          <div class="form-row">
             <div>
-              <h5 class="mb-1">Call Me</h5>
-              <p class="mb-0">0416 108 916</p>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
             </div>
-          </div>
-
-          <!-- Email -->
-          <div class="info-item d-flex align-items-center mb-4">
-            <i class="bi bi-envelope-fill fs-3 text-primary me-3"></i>
             <div>
-              <h5 class="mb-1">Email Me</h5>
-              <p class="mb-0"><a href="mailto:awuormercy@gmail.com">awuormercy@gmail.com</a></p>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
             </div>
           </div>
-
-          <!-- Google Map -->
-          <div class="info-item">
-            <h5 class="mb-3">Location</h5>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.839947054116!2d151.2002603152094!3d-33.86784498065854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e0b7b3f%3A0x5017d681632c0f0!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" 
-              frameborder="0" 
-              style="border:0; width: 100%; height: 270px;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
           </div>
-
-        </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit" style="justify-self:start; background:var(--navy); color:#fff;">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
+    </div>
+  </section>
 
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p style="margin:0;">© <span id="year"></span> Mercy Mildred Awuor. All rights reserved.</p>
+    <div class="social-row" style="margin:0;">
+      <a href="https://www.linkedin.com/in/mercy-mildred-awuor-051a7b24" target="_blank" rel="noopener" style="width:auto;height:auto;border:none;">LinkedIn</a>
+      <a href="https://github.com/awuormercy78" target="_blank" rel="noopener" style="width:auto;height:auto;border:none;">GitHub</a>
     </div>
   </div>
-</section>
-
-  </main>
-  
-  <footer id="footer" class="footer position-relative light-background py-4">
-    <div class="container text-center">
-        <div class="row">
-            <!-- Copyright Section -->
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <p class="mb-0">© <span id="current-year"></span> <strong class="px-1 sitename">Portfolio</strong> All Rights Reserved</p>
-            </div>
-
-            <!-- Credits Section -->
-            <div class="col-12 col-md-6">
-                <p class="mb-0">Designed by Awuormercy</p>
-            </div>
-        </div>
-        
-        <!-- Social Media Links -->
-        <div class="social-links mt-4">
-            <a href="#" class="social-icon text-primary me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-icon text-primary me-3"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/mercy-mildred-awuor-051a7b24" class="social-icon text-primary me-3"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon text-primary me-3"><i class="bi bi-github"></i></a>
-        </div>
-    </div>
 </footer>
 
 <script>
-    // Dynamically set the current year in the footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navmenu = document.getElementById('navmenu');
+  navToggle.addEventListener('click', () => {
+    const open = navmenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navmenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('main section[id], .hero[id]');
+  const navLinks = document.querySelectorAll('nav.navmenu a');
+  const setActive = () => {
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      if (window.scrollY >= top) current = sec.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  };
+  window.addEventListener('scroll', setActive);
+  setActive();
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('in'));
+  }
+
+  // Contact form via EmailJS
+  // Replace SERVICE_ID, TEMPLATE_ID and PUBLIC_KEY with your EmailJS project values.
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  const submitBtn = document.getElementById('contact-submit');
+
+  if (window.emailjs) {
+    emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY' });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.textContent = 'Sending...';
+    status.className = 'form-status';
+    submitBtn.disabled = true;
+
+    if (!window.emailjs) {
+      status.textContent = 'Message could not be sent — email service unavailable.';
+      status.className = 'form-status error';
+      submitBtn.disabled = false;
+      return;
+    }
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+      .then(() => {
+        status.textContent = 'Message sent — thank you, I will be in touch soon.';
+        status.className = 'form-status success';
+        form.reset();
+        submitBtn.disabled = false;
+      })
+      .catch(() => {
+        status.textContent = 'Something went wrong. Please try again or email directly.';
+        status.className = 'form-status error';
+        submitBtn.disabled = false;
+      });
+  });
 </script>
 
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
