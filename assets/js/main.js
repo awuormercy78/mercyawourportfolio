@@ -4,17 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Mobile menu toggle
+  // Mobile menu (full-screen slide-in drawer)
   const menuToggle = document.getElementById('menu-toggle');
   const mobileNav = document.getElementById('mobile-nav');
+  const mobileNavClose = document.getElementById('mobile-nav-close');
+  const mobileNavScrim = document.getElementById('mobile-nav-scrim');
 
   function closeMenu(){
     mobileNav.classList.remove('open');
+    mobileNav.setAttribute('aria-hidden', 'true');
     menuToggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
   function openMenu(){
     mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden', 'false');
     menuToggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
@@ -25,12 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
       isOpen ? closeMenu() : openMenu();
     });
 
+    if (mobileNavClose) mobileNavClose.addEventListener('click', closeMenu);
+    if (mobileNavScrim) mobileNavScrim.addEventListener('click', closeMenu);
+
     mobileNav.querySelectorAll('.mobile-link').forEach(link => {
       link.addEventListener('click', closeMenu);
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) closeMenu();
+    });
+
+    // Close automatically if the viewport grows back to desktop size
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860 && mobileNav.classList.contains('open')) closeMenu();
     });
   }
 
